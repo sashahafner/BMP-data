@@ -1,0 +1,13 @@
+"Column name",Description,Units,"Unit details"
+test_id,"Unique key for BMP test",,
+lab_id,"Unique key for laboratory",,
+BMP_id,"Unique key for BMP value (usually mean from 3 bottles with substrate + inoculum)",,
+substrate,"Substrate name or key",,
+ISR,"VS-based inoculum-to-substrate ratio",,
+time_d,"Duration of incubation",d,
+BMP,"BMP value",mL/g,"Standardized CH4 volume (dry, 0 deg. C, 101.325 kPa) per g substrate VS"
+sd,"Standard deviation associated with BMP value",mL/g,"Standardized CH4 volume (dry, 0 deg. C, 101.325 kPa) per g substrate VS"
+se,"Standard error associated with BMP value",mL/g,"Standardized CH4 volume (dry, 0 deg. C, 101.325 kPa) per g substrate VS"
+rsd,"Relative standard deviation associated with BMP value",%,
+n,"Number of bottles with substrate + inoculum used for calculation of BMP value",,
+n_blank,"Number of bottles with inoculum only used for calculation of BMP value",,
