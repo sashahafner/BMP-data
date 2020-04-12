@@ -4,6 +4,7 @@ lab_id,"Unique key for laboratory",,,"BMP, SMP"
 BMP_id,"Unique key for BMP value (usually mean from 3 bottles with substrate + inoculum)",,,"BMP, SMP"
 bottle_id,"Unique key for single BMP bottle used in single test",,,"BMP, SMP"
 interval_id,"Unique key for single measurement interval, for single bottle, used in single test",,,"BMP, SMP"
+reference_id,"Unique key for publication describing data collection etc.",,,tests
 substrate,"Substrate name or key",,,"BMP, SMP"
 ISR,"VS-based inoculum-to-substrate ratio",,,"BMP, SMP"
 time_d,"Incubation duration",d,,"BMP, SMP"
