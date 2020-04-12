@@ -5,8 +5,11 @@ library(ggplot2)
 
 # Load data
 SMP <- read.csv('../data/SMP.csv')
+
+# Check
 summary(SMP)
 
+# Plot
 ggplot(SMP, aes(time_d, SMP, colour = substrate, group = bottle_id)) +
   geom_line() + facet_wrap(~ paste0('Lab ', lab_id, ' test ', test_id)) +
   labs(x = 'Time (d)', y = expression('SMP'~(mL~g^'-1')), colour = 'Substrate')
