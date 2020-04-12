@@ -14,4 +14,4 @@ ggplot(BMP, aes(substrate, BMP, fill = substrate)) +
   geom_boxplot() +
   labs(x = 'Substrate', y = expression('BMP'~(mL~g^'-1')), colour = 'Substrate') +
   theme(legend.position="none")
-ggsave('../plots/BMP.png', height = 4, width = 4)
+ggsave('../plots/BMP.png', height = 3, width = 3)
