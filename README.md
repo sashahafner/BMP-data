@@ -2,7 +2,7 @@
 Laboratory data from biochemical methane potential (BMP) tests.
 Version 0.1.
 
-![Plot of data in BMP.csv](plots/BMP_small.png)
+![Plot of data in BMP.csv](plots/BMP_small.png) ![Plot of data in SMP.csv](plots/SMP_small.png)
 
 # Quick start
 To get everything, select the green "clone or download" button above, and then "download ZIP'.
