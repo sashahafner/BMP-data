@@ -15,3 +15,4 @@ ggplot(BMP, aes(substrate, BMP, fill = substrate)) +
   labs(x = 'Substrate', y = expression('BMP'~(mL~g^'-1')), colour = 'Substrate') +
   theme(legend.position="none")
 ggsave('../plots/BMP.png', height = 3, width = 3)
+ggsave('../plots/BMP_small.png', height = 3, width = 3, dpi = 96)
