@@ -1,0 +1,54 @@
+---
+title: Statistical models and BMP 
+output: pdf_document
+author: Sasha D. Hafner
+date: April 2024
+---
+
+# Overview
+Purpose is to check error distribution for BMP data.
+
+# Analysis
+
+Load data
+
+```{r}
+library(data.table)
+```
+
+```{r}
+BMP <- fread('../data/BMP.csv')
+```
+
+Fit linear fixed-effects model to make diagnostic plots easier.
+
+```{r}
+mod1 <- lm(BMP ~ test_id + lab_id + substrate, data = BMP)
+summary(mod1)
+```
+
+Diagnostics
+
+```{r}
+plot(mod1, ask = FALSE)
+```
+
+Try lognormal.
+
+
+```{r}
+mod2 <- lm(log10(BMP) ~ test_id + lab_id + substrate, data = BMP)
+summary(mod2)
+```
+
+Diagnostics
+
+```{r}
+plot(mod2, ask = FALSE)
+```
+
+# Conclusion
+No major evidence of heteroscedastiscity.
+But some deviation from normality in errors.
+Log transformation does not help issue that much.
+But it is most likely related to unusual extreme values.
